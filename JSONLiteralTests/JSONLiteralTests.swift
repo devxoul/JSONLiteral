@@ -24,27 +24,25 @@ import Foundation
 import XCTest
 
 class JSONLiteralTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
+
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+        let json: AnyObject = [
+            "data": [
+                [
+                    "id": 1,
+                    "name": "Suyeol Jeon",
+                    "age": NSNull(),
+                    "height": 179.9
+                ],
+            ]
+        ]
+
+        XCTAssert(json["data"][0]["id"].integerValue == 1)
+        XCTAssert(json["data"][0]["name"].stringValue == "Suyeol Jeon")
+        XCTAssert(json["data"][0]["age"] == nil)
+        XCTAssert(json["data"][0]["age"] == nil)
+        XCTAssert(json["data"][1] == nil)
+        XCTAssert(json["nonexists"][0]["age"].integerValue == 0)
     }
     
 }
