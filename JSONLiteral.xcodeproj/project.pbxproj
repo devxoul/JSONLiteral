@@ -8,20 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		03F864C11A890F1D0080EFF5 /* JSONLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F864C01A890F1D0080EFF5 /* JSONLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03F864C71A890F1D0080EFF5 /* JSONLiteral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F864BB1A890F1D0080EFF5 /* JSONLiteral.framework */; };
 		03F864CE1A890F1D0080EFF5 /* JSONLiteralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F864CD1A890F1D0080EFF5 /* JSONLiteralTests.swift */; };
 		03F864D81A890F380080EFF5 /* JSONLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F864D71A890F380080EFF5 /* JSONLiteral.swift */; };
+		03F864D91A8910520080EFF5 /* JSONLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F864D71A890F380080EFF5 /* JSONLiteral.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		03F864C81A890F1D0080EFF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03F864B21A890F1D0080EFF5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 03F864BA1A890F1D0080EFF5;
-			remoteInfo = JSONLiteral;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03F864BB1A890F1D0080EFF5 /* JSONLiteral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONLiteral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F864C71A890F1D0080EFF5 /* JSONLiteral.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +137,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				03F864C91A890F1D0080EFF5 /* PBXTargetDependency */,
 			);
 			name = JSONLiteralTests;
 			productName = JSONLiteralTests;
@@ -220,19 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F864D91A8910520080EFF5 /* JSONLiteral.swift in Sources */,
 				03F864CE1A890F1D0080EFF5 /* JSONLiteralTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		03F864C91A890F1D0080EFF5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 03F864BA1A890F1D0080EFF5 /* JSONLiteral */;
-			targetProxy = 03F864C81A890F1D0080EFF5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03F864CF1A890F1D0080EFF5 /* Debug */ = {
@@ -270,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -310,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
